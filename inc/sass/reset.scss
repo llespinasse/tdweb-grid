@@ -1,0 +1,34 @@
+@import 'mixin.scss';
+
+* {
+  box-sizing: border-box;
+  font-family: $FONT;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent; /* pour retirer la mise en avant */
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+button {
+  @include btResetAppearance();
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+input {
+  @include resetAppearance();
+  outline: none;
+}
